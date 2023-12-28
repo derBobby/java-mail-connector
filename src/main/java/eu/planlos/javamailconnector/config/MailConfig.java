@@ -1,6 +1,7 @@
 package eu.planlos.javamailconnector.config;
 
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +9,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import java.util.Properties;
 
+@Slf4j
 @Configuration
 public class MailConfig {
 
@@ -58,6 +60,13 @@ public class MailConfig {
 		this.mailPort = mailPort;
 		this.mailUsername = mailUsername;
 		this.mailPassword = mailPassword;
+
+		log.info("Creating mail config:");
+		log.info("- active: {}", this.active);
+		log.info("- subject prefix: {}", this.subjectPrefix);
+		log.info("- active: {}", this.active);
+		log.info("- active: {}", this.active);
+		log.info("- mail host: {}", this.mailHost);
 	}
 
 	@Bean
