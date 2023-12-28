@@ -25,14 +25,6 @@
 
     <dependencies>
 
-        <!-- Own -->
-
-        <dependency>
-            <groupId>eu.planlos</groupId>
-            <artifactId>java-utilities</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-
         <!-- Spring -->
 
         <dependency>
