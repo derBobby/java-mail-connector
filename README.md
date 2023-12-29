@@ -34,7 +34,6 @@ public class MailPackageConfig {}
 | `spring.mail.properties.mail.smtp.auth`            | String  | true                       | See spring docs                                | 
 | `spring.mail.properties.mail.smtp.starttls.enable` | String  | true                       | See spring docs                                | 
 | `spring.mail.properties.mail.debug`                | String  | false                      | See spring docs                                | 
-| `spring.mail.properties.mail.smtp.starttls.enable` | String  | true                       | See spring docs                                | 
 | `spring.mail.host`                                 | String  | smtp.example.com           | See spring docs                                | 
 | `spring.mail.port`                                 | Integer | 587                        | See spring docs                                | 
 | `spring.mail.username`                             | String  | not-configured@example.com | See spring docs                                | 
