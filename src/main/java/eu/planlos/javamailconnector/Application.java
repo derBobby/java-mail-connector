@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Profile;
 
-@Profile("DEV")
+@Profile("java-mail-connector-dev")
 @SpringBootApplication
 @ConfigurationPropertiesScan
 public class Application {
