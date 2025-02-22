@@ -42,11 +42,11 @@ public class MailService implements IMailService {
         do {
             try {
                 sendRetryMail(subject, content, recipients);
-                logMailOK();
+                log.debug("Mail has been sent, if enabled.");
                 return;
             } catch (MailException e) {
                 lastException = e;
-                logRetryMailError(tryNumber, e);
+                log.error("Sending mail {}/{} was not successful: {}", tryNumber, config.getRetryCount(), e.getMessage());
             }
             tryNumber++;
         } while (tryNumber <= config.getRetryCount());
@@ -63,21 +63,13 @@ public class MailService implements IMailService {
 
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(recipients);
-        message.setSubject(prefixSubject(subject));
+        message.setSubject(addPrefixToSubject(subject));
         message.setText(content);
         message.setFrom(config.getMailAdmin());
         mailSender.send(message);
     }
 
-    private void logMailOK() {
-        log.debug("Mail has been sent, if enabled.");
-    }
-
-    private void logRetryMailError(int tryNumber, Exception e) {
-        log.error("Sending mail {}/{} was not successful: {}", tryNumber, config.getRetryCount(), e.getMessage());
-    }
-
-    private String prefixSubject(String subject) {
+    private String addPrefixToSubject(String subject) {
         return String.format("%s %s", config.getSubjectPrefix(), subject);
     }
 }
