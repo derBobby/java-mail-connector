@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/derBobby/java-mail-connector/compare/v1.1.4...v1.1.5) (2025-02-23)
+
+
+### Bug Fixes
+
+* **pipeline:** Set version for pipe ([9d9b56f](https://github.com/derBobby/java-mail-connector/commit/9d9b56f1501b1456fe44d00ed380c315242d938f))
+
 ## [1.1.4](https://github.com/derBobby/java-mail-connector/compare/v1.1.3...v1.1.4) (2025-02-23)
 
 
