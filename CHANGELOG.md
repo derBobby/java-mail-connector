@@ -1,3 +1,11 @@
+## [1.1.6](https://github.com/derBobby/java-mail-connector/compare/v1.1.5...v1.1.6) (2025-02-23)
+
+
+### Bug Fixes
+
+* **pipeline:** Update pipe version ([a3796ee](https://github.com/derBobby/java-mail-connector/commit/a3796ee6d3b2757f7f579699c6cb172c540e7ceb))
+* **pipeline:** update to existing version ([9572a85](https://github.com/derBobby/java-mail-connector/commit/9572a85a512f626bdd57ed35c3520e6c32987d14))
+
 ## [1.1.5](https://github.com/derBobby/java-mail-connector/compare/v1.1.4...v1.1.5) (2025-02-23)
 
 
