@@ -9,6 +9,15 @@
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
+    {
+      "paths": [
+        "src/main/java/**",
+        "pom.xml"
+      ],
+      "releaseRules": [
+        { "type": "chore", "scope": "mvn deps", "release": "patch" }
+      ]
+    },
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
