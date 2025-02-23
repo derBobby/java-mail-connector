@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/derBobby/java-mail-connector/compare/v1.1.3...v1.1.4) (2025-02-23)
+
+
+### Bug Fixes
+
+* **pipeline:** Set pom 0.0.0 ([a0d307c](https://github.com/derBobby/java-mail-connector/commit/a0d307cec8fdd1455bf13dd289fe9132b99ff5f1))
+
 ## [1.1.3](https://github.com/derBobby/java-mail-connector/compare/v1.1.2...v1.1.3) (2025-02-23)
 
 
