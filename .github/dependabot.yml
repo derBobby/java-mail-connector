@@ -46,6 +46,3 @@ updates:
     commit-message:
       prefix: "chore(npm deps)"  # Ensures changes trigger a release
       include: "scope"
-    allow:
-      - dependency-type: "all"   # include devDependencies too
-    versioning-strategy: widen   # so it will bump the caret range if needed
